@@ -10,7 +10,9 @@ int main() {
     cin >> n;
     cout << "输入矩阵列数:";
     cin >> m;
+    // 二维前缀和
     int dp[n + 1][m + 1];
+    // 原始数组
     int map[n + 1][m + 1];
     cout << "请输入矩阵:" << endl;
     for (int i = 1; i <= n; i++) {
@@ -32,7 +34,7 @@ int main() {
         int x1, x2, y1, y2;
         cout << "请输入区间dp[x1,x2]~dp[x2,y2]:";
         cin >> x1 >> y1 >> x2 >> y2;
-        cout << "结果是:" << (dp[x2][y2] + dp[x1 - 1][y1 - 1] - dp[x1 - 1][y2] - dp[x2][y1 - 1]) << endl;
+        cout << "结果是:" << (dp[x2][y2] - dp[x1 - 1][y2] - dp[x2][y1 - 1] + dp[x1 - 1][y1 - 1]) << endl;
     }
     return 0;
 }
