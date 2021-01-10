@@ -1,3 +1,9 @@
+// https://www.luogu.com.cn/problem/P1093 [NOIP2007 普及组] 奖学金
+// STL sort
+// 这题太水了
+// C语言用结构体+sort就行
+// 学了C++，自然展示下OOP
+
 #include <algorithm>
 #include <iostream>
 using namespace std;
