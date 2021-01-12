@@ -1,5 +1,6 @@
 // https://www.luogu.com.cn/problem/P1115 P1115 最大子段和
-// 以前缀和为模板的动态规划
+// 动态规划
+// 关于最大字段和，在DS_Learing仓库中由更好的解释&&代码
 
 #include <algorithm>
 #include <cstdio>
